@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  Tools"
+                android:text="  About"
                 android:textStyle="bold"
                 android:textColor="#7EB9DE"
                 android:textSize="40dp"
@@ -131,7 +131,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:background="#7EB9DE"
+            android:background="#DEFCFA"
             android:descendantFocusability="blocksDescendants"
             android:gravity="center">
             >
@@ -140,7 +140,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:focusable="false"
-                android:background="@drawable/ic_selected_tool_24"/>
+                android:background="@drawable/ic_normal_tool_24"/>
             <TextView
                 android:layout_marginTop="-3dp"
                 android:layout_width="wrap_content"
@@ -166,7 +166,7 @@
             android:orientation="vertical"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="#DEFCFA"
+            android:background="#7EB9DE"
             android:descendantFocusability="blocksDescendants"
             >
             <ImageView
@@ -174,7 +174,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:focusable="false"
-                android:background="@drawable/ic_normal_about_24"/>
+                android:background="@drawable/ic_selected_about_24"/>
             <TextView
                 android:layout_marginTop="-3dp"
                 android:layout_width="wrap_content"
