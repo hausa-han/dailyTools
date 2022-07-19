@@ -3,19 +3,36 @@ package com.hausa.dailytools.ui;
 import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.hausa.dailytools.R;
+import com.hausa.dailytools.ui.tools.Base64Activity;
+import com.hausa.dailytools.ui.tools.MakeQrActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Three Nav
     private LinearLayout recordeLinearLayout;
     private LinearLayout toolsLinearLayout;
     private LinearLayout aboutLinearLayout;
+
+    // In Main Nav
+
+
+    // In Tools Nav
+    private TextView base64Textview;
+    private TextView scanQrTextview;
+    private TextView makeQrTextview;
+
+    // In About Nav
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +94,61 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+        switch (activityId){
+            case R.layout.activity_main_records:
+                initMainNav();
+                break;
+            case R.layout.activity_main_tools:
+                initToolsNav();
+                break;
+            case R.layout.activity_main_about:
+                initAboutNav();
+                break;
+            default:
+                break;
+        }
+
+
     }
+
+    private void initMainNav() {
+
+
+    }
+
+    private void initToolsNav() {
+        base64Textview = findViewById(R.id.tool_base64_button);
+        scanQrTextview = findViewById(R.id.scan_qr_button);
+        makeQrTextview = findViewById(R.id.make_qr_button);
+
+        base64Textview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Base64Activity.class);
+                startActivity(intent);
+            }
+        });
+        scanQrTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        makeQrTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MakeQrActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void initAboutNav() {
+
+    }
+
+
 
 }

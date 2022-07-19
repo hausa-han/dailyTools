@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hausa.dailytools">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyTools">
+        <activity
+            android:name=".ui.tools.MakeQrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tools.Base64Activity"
+            android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">

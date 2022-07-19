@@ -3,13 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/app_instruction_textview.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/drawable/head_circle_background.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/drawable/ic_baseline_more_24.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/ic_normal_message_24.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/drawable/ic_normal_tool_24.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/ic_selected_message_24.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/drawable/input_whight_back.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/drawable/tool_border_001.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/layout/activity_base64.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
-        <entry key="app/src/main/res/layout/activity_main_about.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_main_about.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main_records.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/activity_main_tools.xml" value="0.29483695652173914" />
+        <entry key="app/src/main/res/layout/activity_make_qr.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2140625" />
       </map>
     </option>

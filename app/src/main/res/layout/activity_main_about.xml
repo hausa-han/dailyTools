@@ -37,7 +37,7 @@
                 />
             <Button
                 android:id="@+id/lost_add_button"
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/ic_baseline_share_24"
@@ -52,24 +52,59 @@
             />
 
         <!---->
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none"
-            >
-            <LinearLayout
-                android:id="@+id/lost_view"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/head_circle_background"
+            android:orientation="vertical">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:orientation="vertical"
-                android:padding="2dp"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
                 >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_instruction_textview"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dailyTools"
+                    android:textColor="#7EB9DE"
+                    android:textStyle="bold"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 0.0.1"
+                    android:textColor="#7EB9DE"
+                    android:textStyle="bold"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power by JVAV"
+                    android:textColor="#7EB9DE"
+                    android:textStyle="bold"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programed by Hausa_"
+                    android:textColor="#7EB9DE"
+                    android:textStyle="bold"
+                    android:textSize="10dp"/>
 
             </LinearLayout>
-        </ScrollView>
+            </ScrollView>
         <!--        -->
-
+        </LinearLayout>
 
 
     </LinearLayout>

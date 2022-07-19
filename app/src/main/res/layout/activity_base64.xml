@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="57"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#DEFCFA">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Base64"
+                android:textStyle="bold"
+                android:textColor="#7EB9DE"
+                android:textSize="40dp"
+                android:layout_weight="30"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  "
+                android:textSize="5dp"
+                android:background="#7EB9DE"
+                />
+            <Button
+                android:id="@+id/lost_add_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_more_24"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="1dp"
+            android:background="#7EB9DE"
+            />
+
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/head_circle_background"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <EditText
+                            android:id="@+id/base64_before_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Input String here"
+                            android:textColorHint="#7EB9DE"
+                            android:textColor="#7EB9DE"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="20dp"
+                            android:background="@drawable/input_white_back"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/encode_button"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:background="@drawable/tool_border_001"
+                            android:text="Encode"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text = "     "
+                            />
+                        <TextView
+                            android:id="@+id/decode_button"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:background="@drawable/tool_border_001"
+                            android:text="Decode"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/base64_after_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Click here to copy the result"
+                            android:textColorHint="#7EB9DE"
+                            android:textColor="#7EB9DE"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="20dp"
+                            android:background="@drawable/input_white_back"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/copy_button"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:background="@drawable/tool_border_001"
+                            android:text="Copy"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text = "     " />
+                        <TextView
+                            android:id="@+id/reverse_button"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:background="@drawable/tool_border_001"
+                            android:text="Reverse"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text = "     "/>
+                        <TextView
+                            android:id="@+id/clear_button"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:background="@drawable/tool_border_001"
+                            android:text="Clear"/>
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--  bottom nav bar  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="1dp"
+        android:background="#7EB9DE"
+        />
+
+
+</LinearLayout>

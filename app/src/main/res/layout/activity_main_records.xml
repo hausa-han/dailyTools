@@ -37,7 +37,7 @@
                 />
             <Button
                 android:id="@+id/lost_add_button"
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/ic_baseline_share_24"
@@ -52,22 +52,23 @@
             />
 
         <!---->
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none"
-            >
-            <LinearLayout
-                android:id="@+id/lost_view"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/head_circle_background"
+            android:orientation="vertical">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:orientation="vertical"
-                android:padding="2dp"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:padding="5dp"
                 >
 
-            </LinearLayout>
-        </ScrollView>
+
+            </ScrollView>
+        </LinearLayout>
         <!--        -->
 
 
